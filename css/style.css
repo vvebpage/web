@@ -1,0 +1,237 @@
+/* Define custom colors */
+:root {
+    --lily: #bb9bb0;
+    --blue-bayoux: #545c84;
+    --big-stone: #131931;
+    --tradewind: #61b7b5;
+    --scampi: #6c63b2;
+    --scampi-transparent: rgba(108, 99, 178, 0.5); /* Transparent version */
+    --rhino: #293c5e;
+    --william: #3a6068;
+    --eggplant: #5f3f5b;
+    --plantation: #243c4a;
+    --rouge: #9e3a89;
+}
+
+/* Background animation */
+@keyframes backgroundAnimation {
+    0%, 100% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+}
+
+/* Base body styles */
+body {
+    background: url('cybercity.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 1rem;
+    animation: backgroundAnimation 30s ease infinite;
+    overflow-x: hidden;
+    color: #ffffff;
+
+}
+
+/* General text color */
+.generalStyleBody,
+tbody,
+.textarea,
+.container3Table {
+    color: #ffffff;
+    font-size: small;
+    border: #61b7b5;
+    max-width: 400px;
+}
+
+/* Container for centered content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: left;
+}
+
+/* Max width utility */
+.max-w-4xl {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+    border: #61b7b5;
+}
+
+.table-header {
+    background-color: var(--scampi-transparent);
+    color: white;
+    align-content: center;
+    
+}
+
+
+.table-cell {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: small;
+
+}
+
+/* Input and textarea styles */
+.input,
+.textarea {
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--tradewind);
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    color: #7c7c7c;
+    outline: none; /* Remove default outline */
+}
+
+.textarea {
+    height: 8rem;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: var(--rouge); /* Highlight on focus */
+}
+
+/* Image styles */
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+
+}
+
+/* Title styles */
+.title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--tradewind);
+}
+
+/* Footer styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flex utility */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Button styles */
+.button {
+    width: 33%;
+    padding: 0.5rem;
+    background-color: var(--rhino);
+    color: white;
+    border-radius: 0.375rem;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer; /* Indicate clickable */
+    border: none; /* Remove default border */
+    font-size: small;
+}
+
+.button:hover {
+    background-color: var(--rouge);
+}
+
+/* Flex container for split layouts */
+.flex-container {
+    display: flex;
+    gap: 1rem; /* Add gap between children */
+}
+
+.half-width {
+    width: 50%;
+}
+
+/* Padding utilities */
+.p-2 {
+    padding: 0.1rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+/* Shadow utility */
+.shadow-md {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Background utility */
+.bg-white, .container {
+    background-color: hsla(228, 44%, 13%, 0.8);
+
+}
+@media only screen and (min-width: 430px) {
+    body, .footer {
+        width: 430px !important;
+        margin: 0 auto;
+    }
+    .head {
+        max-width: 430px;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        z-index: 999;
+        top: 0 !important;
+    }
+}
+
+/* copy button prompt*/
+.table-row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the cells */
+    padding: 10px; /* Add some padding */
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+}
+
+.table-cell {
+    flex: 1; padding: 5px; /* Add padding to cells */
+}
+
+.copy-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.copy-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

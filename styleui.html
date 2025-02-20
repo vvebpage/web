@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>Style Table</title>
+</head>
+<body>
+    <div class="bg-white">
+        <div class="mb-4">
+            <input id="autoSearch" onkeyup="filterTable('autoSearch', 'generalStyleTable'); filterTable('autoSearch', 'cartoonStyleTable');" class="input" placeholder="search style..." type="text"/>
+        </div>
+        <div class="flex-container mb-4">
+            <div class="half-width p-2 border">
+                <p class="textarea" id="Promptinput">Select a style to see the prompt and image.</p>
+                <button onclick="copyText()" class="copy-button">Copy</button>
+            </div>
+            <div class="half-width p-2 border">
+                <img alt="Selected style image" class="image" id="styleImage" src="https://storage.googleapis.com/a1aa/image/CkSP21gQgmfGpRyPExhaXTzwZmz_TbkiyLoWzWv-ktA.jpg"/>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label class="label">Your Prompt here</label>
+        </div>
+        <div class="mb-4">
+            <input class="input" id="inputtext" placeholder="Type your prompt here..." type="text" oninput="updateDisplay()" />
+        </div>
+        <div class="mb-4">
+            <label class="label" id="stylegroup" >Style Group</label>
+            <select class="input">
+                <option>None</option>
+                <option>General Style</option>
+                <option>Cartoon Style</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label class="label" for="stylename">Style Name</label>
+            <select class="input" id="stylename">
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="mb-4">
+
+            <table id="generalStyleTable" class="table">
+                <h2 class="title">General style</h2>
+                <thead>
+                    <tr class="table-header">
+                        <th class="table-cell">No.</th>
+                        <th class="table-cell">Style name.</th>
+                        <th class="table-cell">Image</th>
+                        <th class="table-cell">Prompts</th>
+                    </tr>
+                </thead>
+                <tbody id="generalStyleBody">
+                    <!-- Table rows will be populated here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mb-4">
+            <h2 class="title">Cartoon style</h2>
+            <table id="cartoonStyleTable" class="table">
+                <thead>
+                    <tr class="table-header">
+                        <th class="table-cell">No.</th>
+                        <th class="table-cell">Style name.</th>
+                        <th class="table-cell">Image</th>
+                        <th class="table-cell">Prompts</th>
+                    </tr>
+                </thead>
+                <tbody id="cartoonStyleBody">
+                    <!-- Table rows will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container" style="display: none;">
+        <div class="promptdta">
+            <table class="table">
+                <thead>
+                    <tr class="table-header">
+                        <th class="table-cell" scope="col">No.</th>
+                        <th class="table-cell" scope="col">Style Name</th>
+                        <th class="table-cell" scope="col">Image</th>
+                        <th class="table-cell" scope="col">Prompts</th>
+                    </tr>
+                </thead>
+            </table>
+            <div id="container3Table">
+                <!-- Table rows will be populated here -->
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="flex">
+            <button id="ShowPrompts" class="button">Show Prompts</button>
+            <button id="goToTop" class="button">Go to Top</button>
+            <button id="Showstyle" class="button">Show style</button>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/styles.js"></script>
+    <script src="js/Prompt.js"></script>
+</body>
+</html>
