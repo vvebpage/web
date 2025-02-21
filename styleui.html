@@ -6,6 +6,7 @@
     <link href="css/style.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <title>Style Table</title>
+    
 </head>
 <body>
     <div class="bg-white">
@@ -77,19 +78,17 @@
         </div>
     </div>
     <div class="container" style="display: none;">
-        <div class="promptdta">
-            <table class="table">
-                <thead>
-                    <tr class="table-header">
-                        <th class="table-cell" scope="col">No.</th>
-                        <th class="table-cell" scope="col">Style Name</th>
-                        <th class="table-cell" scope="col">Image</th>
-                        <th class="table-cell" scope="col">Prompts</th>
-                    </tr>
-                </thead>
-            </table>
-            <div id="container3Table">
-                <!-- Table rows will be populated here -->
+        <div class="table">
+            <div class="table-header">
+                <div class="table-row">
+                    <div class="table-cell">No</div>
+                    <div class="table-cell">Style Name</div>
+                    <div class="table-cell" style="margin-left: 15px;">Image</div>
+                    <div class="table-cell" style="margin-left: 60px;">Prompt</div>
+                </div>
+            </div>
+            <div class="table-body" id="container3Table">
+                <!-- Table rows will be dynamically added here -->
             </div>
         </div>
     </div>
