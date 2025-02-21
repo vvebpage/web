@@ -1,6 +1,4 @@
-// Create the table body
-const tbody = document.getElementById('container3Table'); // Get the tbody element by ID
-const tableData = [
+const containerTable = [
     {
             
             no: 1,
@@ -3423,290 +3421,253 @@ const tableData = [
         {
             no: 1,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/BAxsXFp0Musgr6eyrKM1mv4w0mOxKJ5PSje4V_cdP3Y.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/BAxsXFp0Musgr6eyrKM1mv4w0mOxKJ5PSje4V_cdP3Y.jpg",
             prompt: "{dog and cat} in a playful embrace, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 2,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/j7NKAg-QIcovZ84zdJYSN-DRI5eFdUjEgHt5M7IgttM.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/j7NKAg-QIcovZ84zdJYSN-DRI5eFdUjEgHt5M7IgttM.jpg",
             prompt: "{dog and cat} in a whimsical garden, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 3,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/1UJM7pQ6XRD7-Xk6rvyC1CjYSdorFyYDg1UNOhnMGb8.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/1UJM7pQ6XRD7-Xk6rvyC1CjYSdorFyYDg1UNOhnMGb8.jpg",
             prompt: "{dog and cat} as geometric shapes, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 4,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/IPE6Qa9yZi6Jr-wd3LdtFHf6Ak7is7K_bONtyXde_Mw.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/IPE6Qa9yZi6Jr-wd3LdtFHf6Ak7is7K_bONtyXde_Mw.jpg",
             prompt: "{dog and cat} in a cosmic setting, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 5,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/pKwEBkLfB0lE-ymMV-M2THOXXGMiLFZmHq8Sr7pSz0s.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/pKwEBkLfB0lE-ymMV-M2THOXXGMiLFZmHq8Sr7pSz0s.jpg",
             prompt: "{dog and cat} surrounded by colorful flowers, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 6,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/MS3zSiWxyME5wqTsumUHigfDCNkM9MK65Ey2Tf173_A.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/MS3zSiWxyME5wqTsumUHigfDCNkM9MK65Ey2Tf173_A.jpg",
             prompt: "{dog and cat} in a cityscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 7,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/v9oi8v05yx--oQUKbgi-fU0KuVGuf_2lxHBD6corWXk.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/v9oi8v05yx--oQUKbgi-fU0KuVGuf_2lxHBD6corWXk.jpg",
             prompt: "{dog and cat} in a dreamlike landscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 8,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/jikBl24nVxC-UNsyLePYngNoWzvZPCzQmfuGKjLNudQ.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/jikBl24nVxC-UNsyLePYngNoWzvZPCzQmfuGKjLNudQ.jpg",
             prompt: "{dog and cat} as silhouettes against a sunset, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 9,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/fh4ibiGk7mRLbhq_5VKrJ4bvnRQRxROyDXtCZlXMheU.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/fh4ibiGk7mRLbhq_5VKrJ4bvnRQRxROyDXtCZlXMheU.jpg",
             prompt: "{dog and cat} in a playful dance, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 10,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/Ic0mNEzPpyApHxIvRb9bzseLsE0XdphxA1K5PH0P4GQ.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/Ic0mNEzPpyApHxIvRb9bzseLsE0XdphxA1K5PH0P4GQ.jpg",
             prompt: "{dog and cat} with intricate mandala patterns, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
     
         {
             no: 11,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/BoQf0z2vEjyT2-7T-ZjXft6Ujp6rHLl6-w1ME3ohxx4.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/BoQf0z2vEjyT2-7T-ZjXft6Ujp6rHLl6-w1ME3ohxx4.jpg",
             prompt: "{dog and cat} in a whimsical underwater scene, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 12,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/MftwkwT3liMMEtcPYesyccnZk274AJRLLpFY9xQWXVA.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/MftwkwT3liMMEtcPYesyccnZk274AJRLLpFY9xQWXVA.jpg",
             prompt: "{dog and cat} in a retro pop art style, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 13,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/g1CTu3jtzVK3X6CASVZk5EbTUbbM1bObY0zFYjY4NPU.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/g1CTu3jtzVK3X6CASVZk5EbTUbbM1bObY0zFYjY4NPU.jpg",
             prompt: "{dog and cat} in a surreal dreamscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 14,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/kFw6cUmZdm7MO6Yrp_4Q7tyuNuc9ttMwnTSAYiBr1u0.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/kFw6cUmZdm7MO6Yrp_4Q7tyuNuc9ttMwnTSAYiBr1u0.jpg",
             prompt: "{dog and cat} with playful geometric patterns, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 15,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/NiOs-E1St5E4gakpN94ZIpFe0ri8vLmPmHtXfkwqT6c.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/NiOs-E1St5E4gakpN94ZIpFe0ri8vLmPmHtXfkwqT6c.jpg",
             prompt: "{dog and cat} in a vibrant forest, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 16,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/fFMdEHDK27M5myvbbL8EU4iaRQjBU5fWeWPy6q6TXOU.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/fFMdEHDK27M5myvbbL8EU4iaRQjBU5fWeWPy6q6TXOU.jpg",
             prompt: "{dog and cat} in a colorful carnival setting, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 17,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/MS3KKceltoQvXeeqOtcILjCZVWLxuHGRbKROv50BsTw.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/MS3KKceltoQvXeeqOtcILjCZVWLxuHGRbKROv50BsTw.jpg",
             prompt: "{dog and cat} in a whimsical fairytale scene, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 18,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/ueiLYQ-2YZQvVKZRpn28m3TqSnqIyuOIOzkOMr0XRw4.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/ueiLYQ-2YZQvVKZRpn28m3TqSnqIyuOIOzkOMr0XRw4.jpg",
             prompt: "{dog and cat} in a vibrant abstract expressionist style, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         
         {
             no: 19,
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/al9ThCgkH_w3rUVeD2pXsVFovlVFkzuiR_pN-BFncJo.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/al9ThCgkH_w3rUVeD2pXsVFovlVFkzuiR_pN-BFncJo.jpg",
             prompt: "{dog and cat} in a colorful geometric landscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 20, 
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/HGXHUuHk-s52gQ6pzjEGbY9LLLwt6if6l7KW1spbspw.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/HGXHUuHk-s52gQ6pzjEGbY9LLLwt6if6l7KW1spbspw.jpg",
             prompt: "{Young Asian couple} in a playful embrace, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 21, 
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/JWhQQ6lGA7IMNKvW28iIs2X9yiHbr2wGeQRGp8J9oRg.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/JWhQQ6lGA7IMNKvW28iIs2X9yiHbr2wGeQRGp8J9oRg.jpg",
             prompt: "{Young Asian couple} in a whimsical garden, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 22, 
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/hfKDGfUa-t4wqScri0GXWOMdMkhR4txxe7GQo19N81c.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/hfKDGfUa-t4wqScri0GXWOMdMkhR4txxe7GQo19N81c.jpg",
             prompt: "{Young Asian couple} as geometric shapes, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 23, 
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/KkbECEMYh55sVl7RJPgvRMWF0pKVUsVUzxlv87ni0KA.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/KkbECEMYh55sVl7RJPgvRMWF0pKVUsVUzxlv87ni0KA.jpg",
             prompt: "{Young Asian couple} in a cosmic setting, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 24, 
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/ykWxuowhlbI0DMkOWnlGhNNcVFnX82Ip0W4HVICuOEg.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/ykWxuowhlbI0DMkOWnlGhNNcVFnX82Ip0W4HVICuOEg.jpg",
             prompt: "{Young Asian couple} surrounded by colorful flowers, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 25, 
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/QOCftjMPAP19ft0WHIAHoyN1Jfv0iOqLsFObStYBn8o.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/QOCftjMPAP19ft0WHIAHoyN1Jfv0iOqLsFObStYBn8o.jpg",
             prompt: "{Young Asian couple} in a cityscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 26, 
             styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/95mNoWAF2kkFtktK9oc7dgTG265wbZvJQzZRPnz9UU0.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/95mNoWAF2kkFtktK9oc7dgTG265wbZvJQzZRPnz9UU0.jpg",
             prompt: "{Young Asian couple} in a dreamlike landscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 27, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/b2ZIN72blLNz8bZ0Hvyl77OKkHHRYF1g_HumYWEYqkY.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/b2ZIN72blLNz8bZ0Hvyl77OKkHHRYF1g_HumYWEYqkY.jpg",
             prompt: "{Young Asian couple} as silhouettes against a sunset, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 28, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/lXROGP-e1n2GkApPTjww-obnp2CbmuanIY6nsvMBUX0.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/lXROGP-e1n2GkApPTjww-obnp2CbmuanIY6nsvMBUX0.jpg",
             prompt: "{Young Asian couple} in a playful dance, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 29, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/T7I2vjckm7VWcZXpohrH5kdpakmcpRU6yz6ZDd6VlzY.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/T7I2vjckm7VWcZXpohrH5kdpakmcpRU6yz6ZDd6VlzY.jpg",
             prompt: "{Young Asian couple} with intricate mandala patterns, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 30, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/jnfi8EzR_5Ggm7VIjUN7PUsImYEk3B7k6__D5HVrtKg.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/jnfi8EzR_5Ggm7VIjUN7PUsImYEk3B7k6__D5HVrtKg.jpg",
             prompt: "{Young Asian couple} in a whimsical underwater scene, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 31, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/FV0_QFW_QEv7GECmYDc4SePlb7TX5OZMEOqlUPF_2so.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/FV0_QFW_QEv7GECmYDc4SePlb7TX5OZMEOqlUPF_2so.jpg",
             prompt: "{Young Asian couple} in a retro pop art style, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 32, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/3EbD97pBSCsvG1xVHzeFu1ENdqIC5XVxBBbLBDMgBfQ.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/3EbD97pBSCsvG1xVHzeFu1ENdqIC5XVxBBbLBDMgBfQ.jpg",
             prompt: "{Young Asian couple} in a surreal dreamscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 33, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/RLZ5RJzaFRSMwfGYMo7Wx6RVEeZPg9GugFNZLkY2eOs.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/RLZ5RJzaFRSMwfGYMo7Wx6RVEeZPg9GugFNZLkY2eOs.jpg",
             prompt: "{Young Asian couple} with playful geometric patterns, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 34, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/CDZelBH_pL5aU6jKnM53AQZDU4ij6_NLI0sQu4-UCes.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/CDZelBH_pL5aU6jKnM53AQZDU4ij6_NLI0sQu4-UCes.jpg",
             prompt: "{Young Asian couple} in a vibrant forest, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 35, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/D6A4ImztM_buKWgRewnHmPJB1kDp1IsJssdW6l48KrA.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/D6A4ImztM_buKWgRewnHmPJB1kDp1IsJssdW6l48KrA.jpg",
             prompt: "{Young Asian couple} in a colorful carnival setting, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 36, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/aod3CvIYNBRXydbAx5h2dtoutiuFdBHX8A3rBM4QJ70.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/aod3CvIYNBRXydbAx5h2dtoutiuFdBHX8A3rBM4QJ70.jpg",
             prompt: "{Young Asian couple} in a whimsical fairytale scene, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 37, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/ZdAA0x6-kI5kDtAtmSUxvQxAtm4MEoa2GW520DpHxm4.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/ZdAA0x6-kI5kDtAtmSUxvQxAtm4MEoa2GW520DpHxm4.jpg",
             prompt: "{Young Asian couple} in a vibrant abstract expressionist style, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         },
         {
             no: 38, styleName: "Wall art print",
-            imageSrc: "https://kakaladi-catalog.github.io/drawveasna/image/wallart/eih7Zgwj9KFvg5Sv3DI_8m1R_F7HWexQBYBfgYUM7Qk.jpg",
+            imageSrc: "https://stall-catalog.github.io/drawveasna/image//wallart/eih7Zgwj9KFvg5Sv3DI_8m1R_F7HWexQBYBfgYUM7Qk.jpg",
             prompt: "{Young Asian couple} in a colorful geometric landscape, modern design, vibrant colors, abstract, framed, stylish decor, artistic, home interior, detailed patterns, contemporary."
         }       
     ];
 
-
-// Loop through the tableData array and create table rows
-tableData.forEach(item => {
-    const row = document.createElement('div'); // Create a new div for the row
-    row.classList.add('table-row'); // Add a class for styling
-
-    // Create cells for each property
-    const noCell = document.createElement('div');
-    noCell.classList.add('table-cell');
-    noCell.textContent = item.no; // Set the text content to the number
-    row.appendChild(noCell); // Append the cell to the row
-
-    const styleNameCell = document.createElement('div');
-    styleNameCell.classList.add('table-cell');
-    styleNameCell.textContent = item.styleName; // Set the text content to the style name
-    row.appendChild(styleNameCell); // Append the cell to the row
-
-    const imageCell = document.createElement('div');
-    imageCell.classList.add('table-cell');
-    const img = document.createElement('img'); // Create an image element
-    img.src = item.imageSrc; // Set the image source
-    img.alt = item.styleName; // Set the alt text
-    img.height = 50; // Set the height
-    img.width = 50; // Set the width
-    imageCell.appendChild(img); // Append the image to the cell
-    row.appendChild(imageCell); // Append the cell to the row
-
-    const promptCell = document.createElement('div');
-    promptCell.classList.add('table-cell');
-    promptCell.textContent = item.prompt; // Set the text content to the prompt
-    row.appendChild(promptCell); // Append the cell to the row
-
-    // Create the Copy Prompt button
-    const copyButton = document.createElement('button');
-    copyButton.textContent = 'Copy'; // Set button text
-    copyButton.classList.add('copy-button'); // Add a class for styling
-
-    // Add click event to copy the prompt to clipboard
-    copyButton.addEventListener('click', () => {
-        navigator.clipboard.writeText(item.prompt) // Copy the prompt text
-            .then(() => {
-                alert('Prompt copied to clipboard!'); // Alert on success
-            })
-            .catch(err => {
-                console.error('Failed to copy: ', err); // Log error if copy fails
-            });
+// Function to populate the table
+function populateTable(data, tableBodyId) {
+    const tableBody = document.getElementById(tableBodyId);
+    data.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${item.no}</td>
+            <td>${item.styleName}</td>
+            <td><img src="${item.imageSrc}" alt="${item.styleName}" width="50" height="50"></td>
+            <td>${item.prompt}</td>
+        `;
+        tableBody.appendChild(row);
     });
+}
 
-    // Append the button to the prompt cell
-    promptCell.appendChild(copyButton);
-
-    // Append the completed row to the tbody
-    tbody.appendChild(row);
-});
+// Populate both tables
+populateTable(containerTable, 'containerBody');
