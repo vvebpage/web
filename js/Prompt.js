@@ -1,11 +1,5 @@
 const containerTable = [
-    {
-            
-            no: 1,
-            styleName: "Nightwear sets1",
-            imageSrc: "https://stall-catalog.github.io/drawveasna/images/DR4gy8nt5_gaecPyp5UC5wncKWCz7fq2qKZ8bg-A0eo.jpg",
-            prompt: "Lace Bralette + Silk Pajama Shorts"
-          },
+            {no: 1,styleName: "Nightwear sets1",imageSrc: "https://stall-catalog.github.io/drawveasna/images/DR4gy8nt5_gaecPyp5UC5wncKWCz7fq2qKZ8bg-A0eo.jpg",prompt: "Lace Bralette + Silk Pajama Shorts"},
           {
             no: 2,
             styleName: "Nightwear sets2",
@@ -3654,7 +3648,16 @@ const containerTable = [
         }       
     ];
 
-// Function to populate the table
+// 2) Function to copy text to clipboard
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert('Prompt copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
+
+// 1) Function to populate the table
 function populateTable(data, tableBodyId) {
     const tableBody = document.getElementById(tableBodyId);
     data.forEach(item => {
@@ -3664,10 +3667,11 @@ function populateTable(data, tableBodyId) {
             <td>${item.styleName}</td>
             <td><img src="${item.imageSrc}" alt="${item.styleName}" width="50" height="50"></td>
             <td>${item.prompt}</td>
+            <td><button style="font-size: smaller;" onclick="copyToClipboard('${item.prompt}')">Copy</button></td>
         `;
         tableBody.appendChild(row);
     });
 }
 
-// Populate both tables
+// Populate the table
 populateTable(containerTable, 'containerBody');
