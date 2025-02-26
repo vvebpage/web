@@ -112,6 +112,8 @@ function updateDisplay() {
         selectedStyle = generalStyles.find(style => style.name === selectedStyleName);
     } else if (selectedStyleGroup === 'Cartoon Style') {
         selectedStyle = cartoonStyles.find(style => style.name === selectedStyleName);
+    } else if (selectedStyleGroup === 'General Style new') {
+        selectedStyle = generalStyles2.find(style => style.name === selectedStyleName);
     }
 
     // Get user input from the input field
@@ -129,8 +131,9 @@ function updateDisplay() {
     }
 }
 
-// Add event listener to style name select
-document.getElementById('stylename').addEventListener('change', updateDisplay);
+ // Add event listener to style name select
+ document.getElementById('stylename').addEventListener('change', updateDisplay);
+ document.getElementById('stylegroup').addEventListener('change', updateDisplay); // Update display when style group changes
 
 // 5) Add event listener to style name select
 document.getElementById('goToTop').addEventListener('click', function() {
@@ -144,7 +147,7 @@ document.getElementById('goToTop').addEventListener('click', function() {
 const showPromptsButton = document.getElementById('ShowPrompts');
 const showStyleButton = document.getElementById('Showstyle');
 const container = document.querySelector('.container'); // Get the container element
-const container3Table = document.getElementById('container3Table');
+const containerBody = document.getElementById('containerBody');
 const generalStyleTable = document.getElementById('generalStyleTable');
 const cartoonStyleTable = document.getElementById('cartoonStyleTable');
 
