@@ -1,6 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.title {
+            margin-bottom: 0.5rem;
+        }
 /* Header Styles */
 .header {
     background-color: #ffffff; /* White background */
@@ -121,7 +124,7 @@ body {
     display: flex; /* Flexbox for layout */
     align-items: center; /* Center items vertically */
     padding: 0.5rem; /* Padding for video info */
-	margin-bottom: 30px;
+
 }
 
 .channel-avatar {
