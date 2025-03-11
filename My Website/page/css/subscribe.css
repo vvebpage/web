@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    top: 0; /* Align to top */
+    z-index: 10; /* Stack above other elements */
+}
+
+.header-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    padding: 0.5rem 1rem; /* Padding for content */
+}
+
+.logo-container {
+    display: flex; /* Flexbox for logo and text */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    width: 2.5rem; /* Logo width */
+    height: 2.5rem; /* Logo height */
+    margin-right: 0.5rem; /* Space between logo and text */
+}
+
+.logo-text {
+    font-size: 1.25rem; /* Font size for logo text */
+    font-weight: bold; /* Bold text */
+}
+
+.icon-container {
+    display: flex; /* Flexbox for icons */
+    align-items: center; /* Center icons vertically */
+    color: #c60101; /* Icon color */
+}
+
+.icon {
+    font-size: 1.5rem; /* Icon size */
+    margin-left: 1rem; /* Space between icons */
+}
+
+.user-avatar {
+    width: 2.5rem; /* Avatar width */
+    height: 2.5rem; /* Avatar height */
+    border-radius: 50%; /* Circular avatar */
+    margin-left: 1rem; /* Space between avatar and icons */
+}
+
+/* Navigation Styles */
+.nav {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-list {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-around; /* Space items evenly */
+    padding: 0.5rem 0; /* Vertical padding */
+    margin: 0; /* Remove default margin */
+    list-style-type: none; /* Remove bullet points */
+    position: fixed; /* Fix the position */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #ffffff; /* White background for the nav */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
+    z-index: 10; /* Stack above other elements */
+}
+
+.nav-item {
+    text-align: center; /* Center text and icons */
+    flex: 1; /* Allow items to grow equally */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-icon {
+    font-size: 1.5rem; /* Increase icon size */
+    display: block; /* Make icon a block element */
+    margin-bottom: 0.25rem; /* Space between icon and text */
+    color: #c60101; /* Set the icon color to red */
+}
+
+.nav-text {
+    font-size: 0.75rem; /* Smaller text for labels */
+    color: #606060; /* Gray color for text */
+}
+
+/* Hover Effects */
+.nav-item:hover {
+    background-color: #e0e0e0; /* Light gray background on hover */
+    color: #000; /* Dark text color on hover */
+}
+
+/* Subscribe Page Styles */
+.subscribe-section {
+    padding: 1rem; /* Padding for the section */
+    margin-top: 60px; /* Space for fixed header */
+}
+
+.section-title {
+    font-size: 1.5rem; /* Title size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+.channel-list {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack channel items vertically */
+
+}
+
+.channel-item {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    background-color: #fff; /* White background for channel items */
+    margin-bottom: 1rem; /* Space between channel items */
+    padding: 0.5rem; /* Padding for channel item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.channel-avatar {
+    width: 3rem; /* Avatar width */
+    height: 3rem; /* Avatar height */
+    border-radius: 50%; /* Circular avatar */
+    margin-right: 0.5rem; /* Space between avatar and text */
+}
+
+.channel-info {
+    flex-grow: 1; /* Allow text to grow */
+}
+
+.channel-name {
+    font-size: 1rem; /* Channel name size */
+    font-weight: bold; /* Bold channel name */
+}
+
+.channel-subscribers {
+    font-size: 0.85rem; /* Smaller text for subscriber count */
+    color: #606060; /* Gray color for text */
+}
+
+.subscribe-button {
+    background-color: #ff0000; /* YouTube red */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 0.85rem; /* Smaller text for button */
+}
+
+.subscribe-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
