@@ -1,13 +1,15 @@
 body {
+    background-color: #000000; /* Changed to solid black */
     font-family: 'Roboto', sans-serif;
 }
+
 .title {
-            margin-bottom: 0.5rem;
-        }
+    margin-bottom: 0.5rem;
+}
+
 /* Header Styles */
 .header {
-    background-color: #ffffff; /* White background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #000000; /* Changed to solid black */
     position: fixed; /* Fixed position */
     width: 100%; /* Full width */
     top: 0; /* Align to top */
@@ -18,7 +20,6 @@ body {
     display: flex; /* Flexbox for layout */
     justify-content: space-between; /* Space between items */
     padding: 0.5rem 1rem; /* Padding for content */
-
 }
 
 .logo-container {
@@ -30,19 +31,18 @@ body {
     width: 2.5rem; /* Logo width */
     height: 2.5rem; /* Logo height */
     margin-right: 0.5rem; /* Space between logo and text */
-
 }
 
 .logo-text {
     font-size: 1.25rem; /* Font size for logo text */
     font-weight: bold; /* Bold text */
-
+    color: #ffffff;
 }
 
 .icon-container {
     display: flex; /* Flexbox for icons */
     align-items: center; /* Center icons vertically */
-    color: #c60101;
+    color: #ffffff;
 }
 
 .icon {
@@ -59,7 +59,7 @@ body {
 
 /* Navigation Styles */
 .nav {
-    background-color: #ffffff; /* White background */
+    background-color: #000000; /* Changed to solid black */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
@@ -73,7 +73,7 @@ body {
     bottom: 0; /* Align to the bottom */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
-    background-color: #ffffff; /* White background for the nav */
+    background-color: #000000; /* Changed to solid black */
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
     z-index: 10; /* Stack above other elements */
 }
@@ -88,7 +88,7 @@ body {
     font-size: 1.5rem; /* Increase icon size */
     display: block; /* Make icon a block element */
     margin-bottom: 0.25rem; /* Space between icon and text */
-    color: #c60101    ; /* Set the icon color to red */
+    color: #ffffff; /* Set the icon color to white */
 }
 
 .nav-text {
@@ -98,20 +98,21 @@ body {
 
 /* Hover Effects */
 .nav-item:hover {
-    background-color: #e0e0e0; /* Light gray background on hover */
-    color: #000; /* Dark text color on hover */
+    background-color: #000000; /* Keep hover background black */
+    color: #ffffff; /* Change text color to white on hover */
 }
+
 /* Video Section Styles */
 .video-section {
     padding: 0.5rem 1rem; /* Padding for the section */
+    background-color: #000000; /* Changed to solid black */
 }
 
 .video-item {
-    background-color: #fff; /* White background for video items */
+    background-color: #000000; /* Changed to solid black */
     margin-bottom: 1rem; /* Space between video items */
     border-radius: 8px; /* Rounded corners */
     overflow: hidden; /* Prevent overflow */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .video-iframe {
@@ -124,7 +125,6 @@ body {
     display: flex; /* Flexbox for layout */
     align-items: center; /* Center items vertically */
     padding: 0.5rem; /* Padding for video info */
-
 }
 
 .channel-avatar {
@@ -141,6 +141,7 @@ body {
 .video-title {
     font-size: 0.9rem; /* Slightly larger title */
     font-weight: bold; /* Bold title */
+    color: #e0e0e0; /* Light gray for title */
 }
 
 .video-meta {
