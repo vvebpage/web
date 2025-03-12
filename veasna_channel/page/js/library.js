@@ -49,11 +49,14 @@ function renderSavedVideos() {
         const videoItem = document.createElement('div');
         videoItem.className = 'video-item';
 
-        // Create a placeholder for the thumbnail (if needed)
-        const thumbnail = document.createElement('img');
-        thumbnail.src = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`; // Example thumbnail URL
-        thumbnail.alt = `${video.title} Thumbnail`;
-        thumbnail.className = 'video-iframe';
+        // Create an iframe for the embedded YouTube video
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${video.id}`; // Embed URL for YouTube
+        iframe.width = "560"; // Set width
+        iframe.height = "315"; // Set height
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"; // Allow features
+        iframe.allowFullscreen = true; // Allow fullscreen
+        iframe.className = 'video-iframe'; // Add class for styling
 
         const videoInfo = document.createElement('div');
         videoInfo.className = 'video-info';
@@ -74,7 +77,7 @@ function renderSavedVideos() {
         videoInfo.appendChild(channelAvatar);
         videoInfo.appendChild(videoTitle);
         videoInfo.appendChild(videoMeta);
-        videoItem.appendChild(thumbnail);
+        videoItem.appendChild(iframe); // Append the iframe instead of the thumbnail
         videoItem.appendChild(videoInfo);
         videoList.appendChild(videoItem);
     });
