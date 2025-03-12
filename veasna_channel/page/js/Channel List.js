@@ -3,52 +3,62 @@ const channels = [
     {
         name: "Channel Name 1",
         subscribers: "1M subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 2",
         subscribers: "500K subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 3",
         subscribers: "250K subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 4",
         subscribers: "1.5M subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 5",
         subscribers: "300K subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 6",
         subscribers: "800K subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 7",
         subscribers: "1.2M subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 8",
         subscribers: "600K subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 9",
         subscribers: "400K subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     },
     {
         name: "Channel Name 10",
- subscribers: "900K subscribers",
-        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg"
+        subscribers: "900K subscribers",
+        avatar: "https://storage.googleapis.com/a1aa/image/fg2GXPkZOL6sN2P0Lh0CjpWg8ox2zcMdRW5M0ywGnyM.jpg",
+        subscribeLink: "https://www.youtube.com/@vungveasna.channel?sub_confirmation=1"
     }
 ];
 
@@ -75,9 +85,11 @@ function renderChannels() {
         channelSubscribers.className = 'channel-subscribers';
         channelSubscribers.textContent = channel.subscribers;
 
-        const subscribeButton = document.createElement('button');
+        const subscribeButton = document.createElement('a'); // Change to anchor tag
         subscribeButton.className = 'subscribe-button';
         subscribeButton.textContent = 'Subscribe';
+        subscribeButton.href = channel.subscribeLink; // Set the href to the subscribe link
+        subscribeButton.target = "_blank"; // Open in a new tab
 
         channelInfo.appendChild(channelName);
         channelInfo.appendChild(channelSubscribers);
