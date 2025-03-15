@@ -13,20 +13,9 @@
     --rouge: #9e3a89;
 }
 
-/* Background animation */
-@keyframes backgroundAnimation {
-    0%, 100% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 0%;
-    }
-}
-
 /* Base body styles */
 body {
-    background: url('cybercity.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #222;
     padding: 1rem;
     animation: backgroundAnimation 30s ease infinite;
     overflow-x: hidden;
