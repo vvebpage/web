@@ -16,6 +16,7 @@
 /* Base body styles */
 body {
     background-color: #222;
+    background-size: cover;
     padding: 1rem;
     animation: backgroundAnimation 30s ease infinite;
     overflow-x: hidden;
